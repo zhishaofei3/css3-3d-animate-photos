@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body,p,img,dl,dt,dd,ul,ol,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+        body{position:relative;font:12px/1.2em Simsun,Arial;color:#666;text-align:left;background:#000;}
+        ul,ol{list-style:none;}img{border:0 none;}input,select{vertical-align:middle;}table{border-collapse:collapse;}s,em,i{font-style:normal;text-decoration:none;}
+        a{outline:none;text-decoration:none;}a:hover{text-decoration:underline;}
+        .clear{*zoom:1;}.clear:after{clear:both;content:".";display:block;height:0;overflow:hidden;visibility:hidden;zoom:1;}
+
+        html,body {
+            height: 100%;
+        }
+
+        body {
+            perspective: 70000px;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            perspective: 10000px;
+            perspective-origin: -550px -500px;
+        }
+
+        img {
+            width: 900px;
+            height: 600px;
+            left: 50%;
+            margin-left: -450px;
+            position: fixed;
+            display: block;
+            animation: ss 14s linear infinite;
+            transform-origin: 0 0;
+            /*animation-play-state: paused;*/
+        }
+
+        @keyframes ss {
+            to {
+                transform: translate3d(0, 0, 100000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="http://www.gratisography.com/pictures/324_1.jpg" style="transform: translate3d(50%, 0, -80000px);">
+        <img src="http://www.gratisography.com/pictures/325_1.jpg" style="transform: translate3d(50%, 0, -70000px);">
+        <img src="http://www.gratisography.com/pictures/322_1.jpg" style="transform: translate3d(50%, 0, -60000px);">
+        <img src="http://www.gratisography.com/pictures/321_1.jpg" style="transform: translate3d(50%, 0, -50000px);">
+        <img src="http://www.gratisography.com/pictures/323_1.jpg" style="transform: translate3d(50%, 0, -40000px);">
+        <img src="http://www.gratisography.com/pictures/319_1.jpg" style="transform: translate3d(50%, 0, -30000px);">
+        <img src="http://www.gratisography.com/pictures/316_1.jpg" style="transform: translate3d(50%, 0, -20000px);">
+    </div>
+</body>
+</html>
