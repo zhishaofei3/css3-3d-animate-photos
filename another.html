@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+        body { position: relative; font: 12px/1.2em Simsun, Arial; color: #666; text-align: left; background: #000; }
+        ul, ol { list-style: none; }
+        img { border: 0 none; }
+        input, select { vertical-align: middle; }
+        table { border-collapse: collapse; }
+        s, em, i { font-style: normal; text-decoration: none; }
+        a { outline: none; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .clear { *zoom: 1; }
+        .clear:after { clear: both; content: "."; display: block; height: 0; overflow: hidden; visibility: hidden; zoom: 1; }
+        html, body {
+            height: 100%;
+        }
+        body {
+            perspective: 1000px;
+        }
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 500px;
+            height: 500px;
+            transform-style: preserve-3d;
+            animation: ss 10s ease-in-out infinite;
+            transform: rotateY(0deg);
+            transform-origin: 0 0;
+            margin-left: -450px;
+            margin-top: -300px;
+        }
+        img {
+            width: 900px;
+            height: 600px;
+            position: absolute;
+            display: block;
+            transform: rotate3d(0, 0, 0, 0deg);
+            transform-style: preserve-3d;
+        }
+        img:hover {
+            animation: box-shadow 1s;
+            animation-fill-mode: forwards;
+        }
+        img:nth-child(1) {
+            -webkit-transform: translateZ(0);
+        }
+        img:nth-child(2) {
+            -webkit-transform: translateZ(-500px);
+        }
+        img:nth-child(3) {
+            -webkit-transform: translateZ(-1000px);
+        }
+        img:nth-child(4) {
+            -webkit-transform: translateZ(-1500px);
+        }
+        img:nth-child(5) {
+            -webkit-transform: translateZ(-2000px);
+        }
+        img:nth-child(6) {
+            -webkit-transform: translateZ(-2500px);
+        }
+        img:nth-child(7) {
+            -webkit-transform: translateZ(-3000px);
+        }
+        @keyframes ss {
+            5% {
+                transform: rotateY(0deg);
+            }
+            30%, 35% {
+                transform: rotateY(40deg);
+            }
+            80%, 85% {
+                transform: rotateY(50deg) translateZ(3500px);
+            }
+            100% {
+                transform: rotateY(0deg) translateZ(0px);
+            }
+        }
+        @keyframes box-shadow {
+            0% {
+                box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+            }
+
+            100% {
+                box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="http://www.gratisography.com/pictures/324_1.jpg">
+    <img src="http://www.gratisography.com/pictures/325_1.jpg">
+    <img src="http://www.gratisography.com/pictures/322_1.jpg">
+    <img src="http://www.gratisography.com/pictures/321_1.jpg">
+    <img src="http://www.gratisography.com/pictures/323_1.jpg">
+    <img src="http://www.gratisography.com/pictures/319_1.jpg">
+    <img src="http://www.gratisography.com/pictures/316_1.jpg">
+</div>
+</body>
+</html>
